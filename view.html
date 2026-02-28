@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Feedback | Resonare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION BAR -->
+<nav class="navbar">
+  <h3 class="logo">Resonare</h3>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="feedback.html">Write</a>
+    <a href="view.html">View</a>
+  </div>
+</nav>
+
+<!-- PAGE TITLE -->
+<h2 class="page-title">Student Feedback</h2>
+
+<!-- FILTER & SORT CONTROLS -->
+<div class="controls">
+  <select id="filterCategory">
+    <option value="all">All Categories</option>
+    <option>Academics</option>
+    <option>Facilities</option>
+    <option>Teaching</option>
+    <option>Suggestions</option>
+    <option>Events</option>
+  </select>
+
+  <select id="sortType">
+    <option value="latest">Latest</option>
+    <option value="likes">Most Liked</option>
+  </select>
+</div>
+
+<!-- FEEDBACK LIST -->
+<div id="feedbackList"></div>
+
+<!-- SCRIPT -->
+<script src="script.js"></script>
+</body>
+</html>

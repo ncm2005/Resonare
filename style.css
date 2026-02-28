@@ -1,0 +1,328 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: #eedfc3;
+    color: #751515;
+    text-align: center;
+}
+
+/* --- Navigation Bar --- */
+nav.navbar {
+    width: 100%;
+    padding: 1rem 5%;
+    background: rgba(21, 78, 97, 0.05);
+    border-bottom: 1px solid rgba(128, 42, 42, 0.1);
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #861515;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000000;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #961c1c;
+    text-shadow: 0 0 5px rgba(182, 28, 28, 0.4);
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    width: 100%;
+    text-align: center;
+    padding: 60px 5%;
+    background: rgba(21, 78, 97, 0.05);
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+}
+
+.site-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #000000;
+}
+
+.btn-main {
+    padding: 12px 25px;
+    background: #b97171;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    background: #381515;
+    transform: translateY(-2px);
+}
+
+/* --- Cards Row (Home / Main content) --- */
+.main-content-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 600px; /* Match Write section width */
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+    text-align: left;
+    transition: 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #861515;
+}
+
+.card p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Card Buttons */
+.btn-go {
+    padding: 10px 20px;
+    background: #b97171;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-go:hover {
+    background: #381515;
+    transform: translateY(-2px);
+}
+
+/* --- Write Feedback / Form Section --- */
+.section {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+    text-align: left;
+    transition: 0.3s ease, transform 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.12);
+}
+
+.section h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #751515;
+}
+
+/* Form Elements */
+.section label {
+    display: block;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #751515;
+}
+
+.section input,
+.section select,
+.section textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.section input:focus,
+.section select:focus,
+.section textarea:focus {
+    border-color: #4a6cf7;
+    outline: none;
+    box-shadow: 0 0 5px rgba(153, 33, 33, 0.4);
+}
+
+.section textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Submit Button */
+.section button {
+    margin-top: 15px;
+    padding: 12px 30px;
+    background: #b97171;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.section button:hover {
+    background: #381515;
+    transform: translateY(-2px);
+}
+
+/* --- View Feedback Cards Styling --- */
+#feedbackList {
+    display: flex;
+    flex-direction: column; /* Stack feedback cards */
+    align-items: center;
+    gap: 25px;
+    padding: 20px 5%;
+    max-width: 700px; /* same as section width */
+    margin: 0 auto;
+}
+
+#feedbackList .card {
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(244, 0, 0, 0.08);
+    transition: 0.3s ease, transform 0.3s ease;
+    text-align: left;
+}
+
+#feedbackList .card p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+#feedbackList .card button {
+    margin-right: 10px; 
+    padding: 12px 30px;
+    background: #b97171;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+#feedbackList .replies {
+    margin-top: 15px;
+    border-top: 1px solid #cd9696;
+    padding-top: 10px;
+}
+
+#feedbackList .replies textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #d3a3a3;
+    resize: vertical;
+}
+
+#feedbackList .reply-item {
+    background: #dfd6d6;
+    padding: 8px 12px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .main-content-row, #feedbackList {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section, .card {
+        max-width: 95%;
+        margin: 15px auto;
+    }
+}
+/* --- Reactions Styling (Like/Dislike + Emojis) --- */
+.reactions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.reactions button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    background: #f0f0f0;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.reactions button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background: #e0e0e0;
+}
+
+.reactions span {
+    margin-left: 5px;
+    font-weight: 600;
+}

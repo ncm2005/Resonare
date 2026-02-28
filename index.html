@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resonare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h3 class="logo">Resonare</h3>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="feedback.html">Write</a></li>
+            <li><a href="view.html">View</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-section">
+        <h1 class="site-title">Resonare</h1>
+        <p class="tagline">Anonymous Feedback Portal for College Students</p>
+        <a href="feedback.html"><button class="btn-main">Write Feedback</button></a>
+    </div>
+
+    <div class="main-content-row">
+        <div class="card">
+            <h3>Write Feedback</h3>
+            <p>Share your thoughts safely and anonymously.</p>
+            <a href="feedback.html"><button class="btn-go">Go</button></a>
+
+            <!-- Reactions -->
+            
+        </div>
+
+        <div class="card">
+            <h3>View Feedback</h3>
+            <p>Read feedback submitted by students from your college.</p>
+            <a href="view.html"><button class="btn-go">Go</button></a>
+
+            <!-- Reactions -->
+            
+        </div>
+
+        <div class="card">
+            <h3>Privacy</h3>
+            <p>Only verified students can submit feedback. Identity remains anonymous.</p>
+
+            <!-- Reactions -->
+            
+        </div>
+    </div>
+
+    <!-- Frontend JS for reactions -->
+    <script>
+        // Like buttons
+        document.querySelectorAll('.like-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const countSpan = btn.querySelector('.like-count');
+                countSpan.textContent = parseInt(countSpan.textContent) + 1;
+                btn.style.background = '#d0f0ff'; // highlight
+            });
+        });
+
+        // Dislike buttons
+        document.querySelectorAll('.dislike-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const countSpan = btn.querySelector('.dislike-count');
+                countSpan.textContent = parseInt(countSpan.textContent) + 1;
+                btn.style.background = '#ffd0d0'; // highlight
+            });
+        });
+
+        // Emoji buttons
+        document.querySelectorAll('.emoji-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const countSpan = btn.querySelector('.emoji-count');
+                countSpan.textContent = parseInt(countSpan.textContent) + 1;
+                btn.style.background = '#fff0d0'; // highlight
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Feedback | Resonare</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <h3 class="logo">Resonare</h3>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="feedback.html">Write</a>
+      <a href="view.html">View</a>
+    </div>
+  </nav>
+
+  <!-- PAGE TITLE -->
+  <h2 class="page-title">Write Anonymous Feedback</h2>
+
+  <!-- FEEDBACK FORM -->
+  <div class="section">
+    <form id="feedbackForm">
+
+      <!-- CATEGORY -->
+      <label for="category">Category:</label>
+      <select id="category" required>
+        <option value="">Select Category</option>
+        <option>Academics</option>
+        <option>Facilities</option>
+        <option>Teaching</option>
+        <option>Events</option>
+        <option>Suggestions</option>
+      </select>
+
+      <!-- FEEDBACK TEXT -->
+      <label for="text">Feedback:</label>
+      <textarea id="text" placeholder="Your feedback..." required></textarea>
+
+      <!-- URGENCY -->
+      <label for="urgency">Urgency:</label>
+      <select id="urgency">
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="msg"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
